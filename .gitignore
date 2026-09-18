@@ -1,0 +1,75 @@
+# ════════════════════════════════════════════════════════════════════
+#  ⚠️ 安全红线：以下路径含个人凭证，绝对禁止提交
+# ════════════════════════════════════════════════════════════════════
+
+# ── 运行时数据目录（含 token / 配置 / 抓取到的课表）──
+# userinfo.txt        → 小米账号 authorization 令牌
+# aischdule_config.json → saved_token / 设备 UUID
+# .secret_key         → Flask session 签名密钥
+# xskb_list.do.txt    → 从教务系统抓取的原始课表
+#
+# 注意：不写 `data/` 整体忽略 + `!data/.gitkeep` 的写法。
+# Git 无法反向排除一个「已被忽略的目录」内部的任何文件，
+# 正确做法是「忽略内容、放行目录本身」：
+data/*
+!data/.gitkeep
+
+# ── 私有备份（脱敏前手工留存）──
+_private_backup/
+
+# ── 环境变量文件（含真实凭证）──
+.env
+.env.local
+*.env
+
+# ── 审计报告（内含硬编码凭证的引用）──
+AUDIT_REPORT.html
+
+# ── 日志 ──
+*.log
+logs/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── 前端依赖 / 构建缓存（node_modules 绝不能上传）──
+node_modules/
+frontend/node_modules/
+*.tsbuildinfo
+.pnpm-store/
+
+# ── 测试 / 覆盖率 ──
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 临时文件 ──
+*.tmp
+*.bak
+err.txt
+_smoke*.log

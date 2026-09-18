@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  aischedule:
+    build: .
+    container_name: aischedule-hnust
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - FLASK_ENV=production
+      # 小米开放平台应用凭证，从宿主机环境变量或 .env 传入（不硬编码）
+      # 用法：在 .env 同目录创建 .env 后 docker compose 会自动读取，
+      #       或手工 export XIAOMI_CLIENT_ID=... XIAOMI_CLIENT_SECRET=...
+      - XIAOMI_CLIENT_ID=${XIAOMI_CLIENT_ID:?请设置 XIAOMI_CLIENT_ID，见 .env.example}
+      - XIAOMI_CLIENT_SECRET=${XIAOMI_CLIENT_SECRET:?请设置 XIAOMI_CLIENT_SECRET，见 .env.example}
+    restart: unless-stopped
+

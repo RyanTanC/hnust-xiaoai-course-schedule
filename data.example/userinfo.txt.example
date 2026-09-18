@@ -1,0 +1,34 @@
+# 小爱课程表 — 凭证配置模板
+#
+# 使用方法：
+#   1. 复制本文件为 data/userinfo.txt
+#   2. 把下面 JSON 里的占位符替换成你自己的抓包结果
+#
+# 如何获取自己的凭证：
+#   a) 在电脑/手机上登录「小爱课程表」（小米 AI 课表）
+#   b) 用抓包工具（Charles / Fiddler / mitmproxy）抓 https://i.xiaomixiaoai.com 的请求
+#   c) 复制请求头里的 authorization 字段值
+#   d) 填到下面 "authorization" 里
+#
+# ⚠️ 安全提醒：
+#   这个文件等同于你的账号密码，任何拿到它的人都能读写你的课表。
+#   不要提交到 Git、不要发给别人、不要上传到网盘。
+#   本项目的 .gitignore 已屏蔽 data/ 目录，但仍请自行确认。
+#
+# ⚠️ 过期说明：
+#   authorization 令牌会过期（通常数天到数周）。
+#   过期后重新抓包替换本文件，或在界面里点「扫码登录」重新获取。
+
+{
+  "authorization": "DO-TOKEN-V1 app_id:你的APPID,scope_data:...,access_token:你的TOKEN",
+  "userAgent": "Xiaomi 15 Pro; MIAI/7.513.20.0023 Build/507513020 Channel/MIUIOS3.0.304.0.WOBCNXM Device/haotian OS/16 SDK/36 Flavors/upgrade ro.miui.ui.version.name/V816 PhoneLevel/High DeviceType/1 DeviceLevel/High",
+  "userId": 0,
+  "cUserId": "",
+  "deviceId": "",
+  "sid": "i.ai.mi.com",
+  "serviceToken": "",
+  "security": "",
+  "slh": "",
+  "ph": "",
+  "peeked": true
+}

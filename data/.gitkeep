@@ -1,0 +1,11 @@
+# 运行时数据目录
+#
+# 本目录下的所有文件都被 .gitignore 忽略（见根目录 .gitignore）。
+#
+# 程序首次运行时会自动创建：
+#   userinfo.txt            → 小米账号 authorization 令牌（抓包获取）
+#   aischdule_config.json   → saved_token / 设备 UUID / 调试开关
+#   .secret_key             → Flask session 签名密钥（自动生成）
+#   xskb_list.do.txt        → 从教务系统抓取的原始课表
+#
+# 想手动配置登录凭证，可参考 ../data.example/userinfo.txt.example
