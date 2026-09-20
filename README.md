@@ -85,10 +85,6 @@ docker compose up -d
 - **dezige131**（[GitHub](https://github.com/dezige131)）— 项目发起者与原始开发者
 - **RyanTanC**（[GitHub](https://github.com/RyanTanC)）— 在原始项目基础上进行优化与重构
 
-## 🙏 致谢
-
-本项目的课表同步接口思路与原始实现，源自 **QQ 校园频道** 的 [dezige131](https://github.com/dezige131)（即致谢统一起见的项目发起者，曾用名 litre），感谢其探索与分享。当前仓库在其基础上做了 Flask 后端封装、Appica UI 前端重构与工程化（脱敏、Docker、环境变量注入）改造。
-
 ## ⚠️ 免责声明
 
 本项目仅供**个人学习与教学课表管理**使用。请遵守小米及所在学校教务系统的相关服务条款，合理、合规使用，勿用于任何滥用或自动化骚扰行为。因使用本项目造成的后果由使用者自行承担。
