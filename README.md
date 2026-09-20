@@ -82,8 +82,8 @@ docker compose up -d
 
 本项目由以下成员共同维护与开发：
 
-- **RyanTanC**（[GitHub](https://github.com/RyanTanC)）— 项目发起者与主要开发者
-- **dezige131**（[GitHub](https://github.com/dezige131)）— 共创者与贡献者
+- **dezige131**（[GitHub](https://github.com/dezige131)）— 项目发起者与原始开发者
+- **RyanTanC**（[GitHub](https://github.com/RyanTanC)）— 在原始项目基础上进行优化与重构
 
 ## 🙏 致谢
 
