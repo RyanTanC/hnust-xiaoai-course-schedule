@@ -1,4 +1,4 @@
-# 小爱课程表 · HNUST 教务助手
+﻿# 小爱课程表 · HNUST 教务助手
 
 > 把教务系统的课表同步到「小爱课程表 / 小米 AI 课表」的自托管 Web 工具。
 > 后端 Flask + 前端 React（Appica UI），本地或 Docker 一键运行，凭证全部走环境变量，绝不入库。
@@ -77,6 +77,13 @@ docker compose up -d
 - 所有真实凭证（`XIAOMI_CLIENT_SECRET`、`data/userinfo.txt`、`.secret_key` 等）均通过环境变量或 `data/` 注入，`.gitignore` 已屏蔽，绝不提交。
 - 示例文件（`.env.example`、`data.example/userinfo.txt.example`）仅含占位符。
 - 请妥善保管 `data/` 目录，它等同于你的账号密码。
+
+## 👥 共创者
+
+本项目由以下成员共同维护与开发：
+
+- **RyanTanC**（[GitHub](https://github.com/RyanTanC)）— 项目发起者与主要开发者
+- **dezige131**（[GitHub](https://github.com/dezige131)）— 共创者与贡献者
 
 ## 🙏 致谢
 
